@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+<defs>
+  <linearGradient id="cab" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#75787c"/><stop offset="0.08" stop-color="#44484e"/>
+    <stop offset="0.6" stop-color="#292d33"/><stop offset="1" stop-color="#1c1f23"/>
+  </linearGradient>
+  <linearGradient id="side" x1="0" x2="1"><stop offset="0" stop-color="#181a1e"/><stop offset="1" stop-color="#0f1013"/></linearGradient>
+  <linearGradient id="top" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#8a8d90"/><stop offset="1" stop-color="#4b4e54"/></linearGradient>
+  <radialGradient id="cone" cx="0.42" cy="0.38" r="0.7">
+    <stop offset="0" stop-color="#2a3142"/><stop offset="0.55" stop-color="#0d1119"/><stop offset="1" stop-color="#05070a"/>
+  </radialGradient>
+  <radialGradient id="cap" cx="0.35" cy="0.3" r="0.8"><stop offset="0" stop-color="#4a5163"/><stop offset="1" stop-color="#0b0e14"/></radialGradient>
+  <radialGradient id="pool" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E4CC9A" stop-opacity="0.16"/><stop offset="1" stop-color="#E4CC9A" stop-opacity="0"/></radialGradient>
+  <radialGradient id="shadow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#000" stop-opacity="0.75"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  <linearGradient id="floor" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0B1426"/><stop offset="1" stop-color="#080A0E"/></linearGradient>
+  <linearGradient id="wall" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#05070b"/><stop offset="1" stop-color="#0a1120"/></linearGradient>
+  <linearGradient id="shaft" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#E4CC9A" stop-opacity="0.22"/><stop offset="1" stop-color="#E4CC9A" stop-opacity="0"/></linearGradient>
+  <linearGradient id="fade" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.5"/></linearGradient></defs>
+<rect width="1200" height="1500" fill="url(#wall)"/><rect x="0" y="0" width="1" height="1170" fill="#263044" opacity="0.35"/><rect x="133.33333333333334" y="0" width="1" height="1170" fill="#263044" opacity="0.35"/><rect x="266.6666666666667" y="0" width="1" height="1170" fill="#263044" opacity="0.35"/><rect x="400" y="0" width="1" height="1170" fill="#263044" opacity="0.35"/><rect x="533.3333333333334" y="0" width="1" height="1170" fill="#263044" opacity="0.35"/><rect x="666.6666666666667" y="0" width="1" height="1170" fill="#263044" opacity="0.35"/><rect x="800.0000000000001" y="0" width="1" height="1170" fill="#263044" opacity="0.35"/><rect x="933.3333333333335" y="0" width="1" height="1170" fill="#263044" opacity="0.35"/><rect x="1066.6666666666667" y="0" width="1" height="1170" fill="#263044" opacity="0.35"/><rect y="1170" width="1200" height="330" fill="url(#floor)"/><rect y="1170" width="1200" height="1" fill="#263044"/><ellipse cx="600" cy="-150" rx="600" ry="1350" fill="url(#pool)" opacity="0.9"/><g transform="translate(0 2340) scale(1 -1)" opacity="0.12"><ellipse cx="600" cy="1176" rx="181.12499999999997" ry="21.734999999999996" fill="url(#shadow)"/><rect x="479.25" y="227.0000000000001" width="241.49999999999997" height="942.9999999999999" rx="16.099999999999998" fill="url(#cab)"/><rect x="479.25" y="227.0000000000001" width="241.49999999999997" height="942.9999999999999" rx="16.099999999999998" fill="url(#fade)"/><rect x="480.25" y="228.0000000000001" width="239.49999999999997" height="1.5" fill="#fff" opacity="0.12"/><g><ellipse cx="600" cy="321.3000000000001" rx="39.8475" ry="39.8475" fill="#06080c"/>
+    <ellipse cx="600" cy="321.3000000000001" rx="26.564999999999998" ry="26.564999999999998" fill="url(#cap)"/>
+    <ellipse cx="600" cy="321.3000000000001" rx="39.8475" ry="39.8475" fill="none" stroke="#C5A15A" stroke-opacity="0.8" stroke-width="2.1252"/></g><g>
+    <ellipse cx="600" cy="462.7500000000001" rx="78.246" ry="78.246" fill="#05070a"/>
+    <ellipse cx="600" cy="462.7500000000001" rx="72.44999999999999" ry="72.44999999999999" fill="url(#cone)"/>
+    <ellipse cx="600" cy="462.7500000000001" rx="72.44999999999999" ry="72.44999999999999" fill="none" stroke="#C5A15A" stroke-opacity="0.75" stroke-width="2.5357499999999997"/>
+    <ellipse cx="600" cy="462.7500000000001" rx="60.85799999999999" ry="60.85799999999999" fill="none" stroke="#3a4255" stroke-width="3.6224999999999996" stroke-opacity="0.8"/>
+    <ellipse cx="600" cy="462.7500000000001" rx="21.734999999999996" ry="21.734999999999996" fill="url(#cap)"/>
+  </g><g>
+    <ellipse cx="600" cy="698.5" rx="93.89519999999999" ry="93.89519999999999" fill="#05070a"/>
+    <ellipse cx="600" cy="698.5" rx="86.93999999999998" ry="86.93999999999998" fill="url(#cone)"/>
+    <ellipse cx="600" cy="698.5" rx="86.93999999999998" ry="86.93999999999998" fill="none" stroke="#C5A15A" stroke-opacity="0.75" stroke-width="3.0428999999999995"/>
+    <ellipse cx="600" cy="698.5" rx="73.02959999999999" ry="73.02959999999999" fill="none" stroke="#3a4255" stroke-width="4.3469999999999995" stroke-opacity="0.8"/>
+    <ellipse cx="600" cy="698.5" rx="26.081999999999994" ry="26.081999999999994" fill="url(#cap)"/>
+  </g><g>
+    <ellipse cx="600" cy="924.82" rx="93.89519999999999" ry="93.89519999999999" fill="#05070a"/>
+    <ellipse cx="600" cy="924.82" rx="86.93999999999998" ry="86.93999999999998" fill="url(#cone)"/>
+    <ellipse cx="600" cy="924.82" rx="86.93999999999998" ry="86.93999999999998" fill="none" stroke="#C5A15A" stroke-opacity="0.75" stroke-width="3.0428999999999995"/>
+    <ellipse cx="600" cy="924.82" rx="73.02959999999999" ry="73.02959999999999" fill="none" stroke="#3a4255" stroke-width="4.3469999999999995" stroke-opacity="0.8"/>
+    <ellipse cx="600" cy="924.82" rx="26.081999999999994" ry="26.081999999999994" fill="url(#cap)"/>
+  </g></g><ellipse cx="600" cy="1176" rx="181.12499999999997" ry="21.734999999999996" fill="url(#shadow)"/><rect x="479.25" y="227.0000000000001" width="241.49999999999997" height="942.9999999999999" rx="16.099999999999998" fill="url(#cab)"/><rect x="479.25" y="227.0000000000001" width="241.49999999999997" height="942.9999999999999" rx="16.099999999999998" fill="url(#fade)"/><rect x="480.25" y="228.0000000000001" width="239.49999999999997" height="1.5" fill="#fff" opacity="0.12"/><g><ellipse cx="600" cy="321.3000000000001" rx="39.8475" ry="39.8475" fill="#06080c"/>
+    <ellipse cx="600" cy="321.3000000000001" rx="26.564999999999998" ry="26.564999999999998" fill="url(#cap)"/>
+    <ellipse cx="600" cy="321.3000000000001" rx="39.8475" ry="39.8475" fill="none" stroke="#C5A15A" stroke-opacity="0.8" stroke-width="2.1252"/></g><g>
+    <ellipse cx="600" cy="462.7500000000001" rx="78.246" ry="78.246" fill="#05070a"/>
+    <ellipse cx="600" cy="462.7500000000001" rx="72.44999999999999" ry="72.44999999999999" fill="url(#cone)"/>
+    <ellipse cx="600" cy="462.7500000000001" rx="72.44999999999999" ry="72.44999999999999" fill="none" stroke="#C5A15A" stroke-opacity="0.75" stroke-width="2.5357499999999997"/>
+    <ellipse cx="600" cy="462.7500000000001" rx="60.85799999999999" ry="60.85799999999999" fill="none" stroke="#3a4255" stroke-width="3.6224999999999996" stroke-opacity="0.8"/>
+    <ellipse cx="600" cy="462.7500000000001" rx="21.734999999999996" ry="21.734999999999996" fill="url(#cap)"/>
+  </g><g>
+    <ellipse cx="600" cy="698.5" rx="93.89519999999999" ry="93.89519999999999" fill="#05070a"/>
+    <ellipse cx="600" cy="698.5" rx="86.93999999999998" ry="86.93999999999998" fill="url(#cone)"/>
+    <ellipse cx="600" cy="698.5" rx="86.93999999999998" ry="86.93999999999998" fill="none" stroke="#C5A15A" stroke-opacity="0.75" stroke-width="3.0428999999999995"/>
+    <ellipse cx="600" cy="698.5" rx="73.02959999999999" ry="73.02959999999999" fill="none" stroke="#3a4255" stroke-width="4.3469999999999995" stroke-opacity="0.8"/>
+    <ellipse cx="600" cy="698.5" rx="26.081999999999994" ry="26.081999999999994" fill="url(#cap)"/>
+  </g><g>
+    <ellipse cx="600" cy="924.82" rx="93.89519999999999" ry="93.89519999999999" fill="#05070a"/>
+    <ellipse cx="600" cy="924.82" rx="86.93999999999998" ry="86.93999999999998" fill="url(#cone)"/>
+    <ellipse cx="600" cy="924.82" rx="86.93999999999998" ry="86.93999999999998" fill="none" stroke="#C5A15A" stroke-opacity="0.75" stroke-width="3.0428999999999995"/>
+    <ellipse cx="600" cy="924.82" rx="73.02959999999999" ry="73.02959999999999" fill="none" stroke="#3a4255" stroke-width="4.3469999999999995" stroke-opacity="0.8"/>
+    <ellipse cx="600" cy="924.82" rx="26.081999999999994" ry="26.081999999999994" fill="url(#cap)"/>
+  </g>
+<text x="1164" y="1468" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#9AA3B2" fill-opacity="0.55" letter-spacing="2">DEMO ILLUSTRATION</text>
+</svg>

@@ -247,5 +247,3 @@ The build sandbox had no network access, so dependencies couldn't be installed t
 
 - **Customer accounts.** No account icon is shown; checkout works as a guest. Adding accounts needs secure authentication (e.g. Auth.js or Clerk) and authorisation on order history.
 - **Admin panel.** Manage orders with Prisma Studio or your database console until an authenticated admin is built.
-#   a u r e l l e - a u d i o - s t o r e  
- 

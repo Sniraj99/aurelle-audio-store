@@ -1,0 +1,86 @@
+// Orders, payment events and optional inventory.
+// Product content lives in src/data/products.ts (see README: "Managing products").
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum OrderStatus {
+  PENDING_PAYMENT // created, awaiting online payment or manual confirmation
+  PAID            // payment verified server-side
+  PAYMENT_FAILED
+  NEEDS_REVIEW    // paid, but something needs a human (e.g. inventory conflict)
+  CANCELLED
+  FULFILLED
+}
+
+model Order {
+  id                String       @id @default(cuid())
+  publicId          String       @unique // unguessable reference used in confirmation URLs
+  idempotencyKey    String       @unique // prevents duplicate orders from double submission
+  status            OrderStatus  @default(PENDING_PAYMENT)
+  paymentProvider   String       // "razorpay" | "manual"
+  currency          String
+  subtotalMinor     Int
+  shippingMinor     Int?
+  taxMinor          Int          @default(0)
+  totalMinor        Int
+  shippingMethodId  String?
+  customerName      String
+  email             String
+  phone             String
+  address1          String
+  address2          String?
+  city              String
+  state             String
+  postalCode        String
+  country           String
+  notes             String?
+  razorpayOrderId   String?      @unique
+  razorpayPaymentId String?      @unique
+  paidAt            DateTime?
+  createdAt         DateTime     @default(now())
+  updatedAt         DateTime     @updatedAt
+  items             OrderItem[]
+  events            PaymentEvent[]
+
+  @@index([status, createdAt])
+  @@index([email])
+}
+
+model OrderItem {
+  id             String  @id @default(cuid())
+  orderId        String
+  order          Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId      String
+  variantId      String?
+  name           String
+  variantName    String?
+  sku            String?
+  unitPriceMinor Int
+  quantity       Int
+  lineTotalMinor Int
+}
+
+model PaymentEvent {
+  id        String   @id @default(cuid())
+  eventId   String   @unique // provider event id, for webhook idempotency
+  provider  String
+  type      String
+  orderId   String?
+  order     Order?   @relation(fields: [orderId], references: [id])
+  payload   Json
+  createdAt DateTime @default(now())
+}
+
+/// Optional stock tracking keyed by SKU. If no row exists for a SKU, stock is not tracked.
+model InventoryItem {
+  sku       String   @id
+  quantity  Int
+  updatedAt DateTime @updatedAt
+}

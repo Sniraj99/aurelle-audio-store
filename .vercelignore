@@ -1,0 +1,13 @@
+.git
+.gitignore
+README.md
+BRAND.md
+MODIFICATIONS_SUMMARY.md
+GETTING_STARTED.md
+IMPLEMENTATION_COMPLETE.md
+node_modules
+.next
+.env
+.env.local
+dist
+build
